@@ -11,7 +11,9 @@ const weatherParagraph = document.querySelector('p.weather');
 
 function fetchWeather(address) {
     locationParagraph.innerHTML = 'Loading...';
-    fetch(`http://localhost:3000/weather?address=${address}`).then(response => {
+    weatherParagraph.innerHTML = '';
+
+    fetch(`/weather?address=${address}`).then(response => {
         response.json().then(data => {
             if (data.error) {
                 locationParagraph.innerHTML = data.error;

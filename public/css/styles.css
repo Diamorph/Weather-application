@@ -1,0 +1,59 @@
+body {
+   color: #333333;
+    font-family: Arial, sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-app-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.avatar-img {
+    width: 250px;
+    height: 250px;
+}
+
+header {
+    display: flex;
+    padding: 10px 16px;
+    flex-direction: row;
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px rgba(0 0 0 / 14%), 0 2px 1px -1px rgba(0 0 0 / 12%), 0 1px 3px rgba(0 0 0 / 20%);
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+footer {
+    color: #888888;
+    padding: 16px 0;
+    border-top: 1px solid #eeeeee;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888;
+    background: #888;
+    color: white;
+    padding: 8px;
+}

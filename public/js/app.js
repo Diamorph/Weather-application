@@ -1,5 +1,3 @@
-console.log('app.js loaded');
-
 // example of fetch
 // fetch('https://puzzle.mead.io/puzzle').then(response => {
 //     response.json().then(data => {

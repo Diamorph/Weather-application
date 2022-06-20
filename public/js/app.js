@@ -4,6 +4,10 @@
 //         console.log(data);
 //     });
 // });
+const weatherForm = document.querySelector('form');
+const searchElement = weatherForm.querySelector('input');
+const locationParagraph = document.querySelector('p.location');
+const weatherParagraph = document.querySelector('p.weather');
 
 function fetchWeather(address) {
     locationParagraph.innerHTML = 'Loading...';
@@ -18,11 +22,6 @@ function fetchWeather(address) {
         });
     });
 }
-
-const weatherForm = document.querySelector('form');
-const searchElement = weatherForm.querySelector('input');
-const locationParagraph = document.querySelector('p.location');
-const weatherParagraph = document.querySelector('p.weather');
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
